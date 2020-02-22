@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: stack install
+    name: build
+  - init: stack test
+    name: test
+    openMode: split-right
+vscode:
+  extensions:
+    - hoovercj.haskell-linter@0.0.6:VpJluXvOyr9Iw7TIKg2Oyg==
+    - justusadam.language-haskell@2.6.0:CvYnp3YmQPTuto0m1di+1A==
